@@ -1,0 +1,36 @@
+o	Explain Big O notation and how it helps in analyzing algorithms.
+
+Big O notation is a mathematical framework used to measure the efficiency of an algorithm. It describes how the execution time or memory usage of a program scales as the input size grows.Instead of measuring exact seconds, Big O focuses on the growth rate of the algorithm.
+
+Feature of Big O: 
+Hardware Independence: It evaluates code logic, not computer speed.
+Predicts Scalability: It shows how software handles massive data loads.
+Compares Solutions: It helps developers choose the most efficient approach for a problem.
+
+Big O Complexities: Time complexities ordered from fastest to slowest as data grows:
+O(1) — Constant Time: The execution time stays the same, regardless of input size.
+	Example: Accessing an element in an array by its index.
+O(log n) — Logarithmic Time: The problem size is cut in half with each step.
+	Example: Binary search in a sorted list.
+O(n) — Linear Time: The execution time grows proportionally to the input size.
+	Example: Scanning through an unsorted list for a specific value.
+O(n \log n) — Linearithmic Time: Moderately efficient sorting performance.
+	Example: Efficient sorting algorithms like Merge Sort or Quick Sort.
+O(n^2) — Quadratic Time: The time grows quadratically with the input size.
+	Example: Nested loops, such as Bubble Sort.
+
+
+o	Describe the best, average, and worst-case scenarios for search operations.
+
+1. Best-Case: This represents the absolute minimum number of steps required to complete the operation.
+Definition: The target element is in the most optimal position.
+Example: Finding the item on the very first check (e.g., the first element in a linear search or the exact middle element in a binary search).
+Complexity: Typically O(1) for most search algorithms.
+2. Worst-Case: This represents the maximum number of steps an algorithm could possibly take. It provides a guaranteed upper bound on performance.
+Definition: The target element is at the very end of the data structure, or it does not exist in the collection at all.
+Example: Scanning every single item in an unsorted list of size n only to find out the item isn't there.
+Complexity: O(n) for Linear Search and O(log n) for Binary Search.
+3. Average-Case: This reflects the expected behavior of the algorithm over many random inputs.
+Definition: The average performance when searching for randomly distributed data.
+Example: Finding the target item somewhere near the middle of an unsorted list after checking roughly half of the elements.
+Complexity: O(n) for Linear Search and O(log n) for Binary Search.
