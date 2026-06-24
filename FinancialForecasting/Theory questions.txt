@@ -1,0 +1,30 @@
+o	Explain the concept of recursion and how it can simplify certain problems.
+
+Recursion is a programming technique where a function calls itself to solve a smaller, self-similar piece of a larger problem. It breaks complex tasks into simpler steps until a straightforward stopping point is reached, yielding cleaner, more elegant code for tasks with inherent hierarchical structures.
+
+Every recursive algorithm is built on two core components:
+The Base Case: The stopping condition that tells the function when to stop calling itself. Without this, the function would loop forever and cause a crash.
+The Recursive Case: The action where the function breaks the problem into a smaller subset and calls itself to process that subset.
+
+Recursion makes difficult problems vastly simpler by changing how you approach them.
+
+o	Discuss the time complexity of your recursive algorithm.
+
+The recursive algorithm calculates the future value by making one recursive call for each year until the base case (years == 0) is reached.
+If the number of years is n, then the method executes n recursive calls.
+Time Complexity: O(n)
+
+o	Explain how to optimize the recursive solution to avoid excessive computation.
+
+The recursive solution can be optimized by using the compound growth formula:
+
+Future Value=Current Value×(1+GrowthRate)^Years
+
+Advantages of this approach:
+
+Eliminates recursive calls.
+Uses constant extra memory.
+Faster execution for large inputs.
+Avoids stack overflow issues.
+
+Therefore, while recursion is useful for demonstrating the concept of recursive algorithms, the mathematical formula using Math.pow() is a more efficient solution for real-world financial forecasting applications.
